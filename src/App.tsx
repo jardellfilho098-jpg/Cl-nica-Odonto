@@ -18,7 +18,7 @@ function Reveal({children,className=''}:{children:React.ReactNode;className?:str
  return <div ref={ref} className={`reveal ${shown?'is-visible':''} ${className}`}>{children}</div>;
 }
 export default function App(){
- useEffect(()=>{document.title=`${clinic.name} | Cuidado em cada detalhe`;},[]);
+ useEffect(()=>{document.title='Projeto Clínica';},[]);
  return <><a className="skip" href="#conteudo">Pular para o conteúdo</a><Header/><main id="conteudo">
  <section className="hero" id="inicio"><div className="hero-image" style={{backgroundImage:`url('${clinic.photo.hero}')`}} aria-hidden="true"/><div className="hero-wash"/><div className="container hero-content"><div className="hero-copy"><span className="eyebrow hero-eyebrow"><span className="eyebrow-dot"/> UMA NOVA FORMA DE CUIDAR</span><h1>O sorriso é seu.<br/><em>O cuidado é nosso.</em></h1><p>Odontologia contemporânea com escuta, delicadeza e atenção ao que torna você único.</p><div className="hero-actions"><a className="button button-white" href="#agendamento">Agendar avaliação <ArrowUpRight size={18}/></a><a href="#tratamentos" className="hero-secondary">Explorar tratamentos <ArrowRight size={17}/></a></div></div><div className="hero-bottom"><span className="hero-footnote"><span className="horizontal-line"/> MAIS QUE UM SORRISO. UMA EXPERIÊNCIA.</span><a href="#filosofia" className="explore">ROLE PARA EXPLORAR <ArrowDown size={18}/></a><span className="hero-coordinates">01 — 05</span></div></div><span className="hero-decoration" aria-hidden="true">ESSENZA</span></section>
  <div className="journey-strip"><span>O primeiro contato</span><span>Escuta e acolhimento</span><span>Seu plano de cuidado</span><span>Um sorriso que acompanha você</span></div>
